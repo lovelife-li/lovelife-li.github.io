@@ -1,8 +1,12 @@
 ---
 title: Archive
+title-zh: 
+title-nav: 归档
 layout: default
-description: keep hungry keep foolish
+description: "待到山花烂漫时，她在丛中笑"
 header-img: "img/tag-bg.jpg"
+header-img-credit: "true"
+header-img-credit-href: "abcdef"
 ---
 
 <!-- 
@@ -15,11 +19,11 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <!-- Main Content -->
 <div class="container">
 	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
 			<!-- Tags (as filter) -->
 			<div id='tag_cloud' class="tags tags-sup js-tags">
 				<a class="tag-button--all" data-encode="">
-					Show All
+					所有文章
 					<sup>{{site.posts.size}}</sup>
 				</a>
 
@@ -80,6 +84,11 @@ https://github.com/kitian616/jekyll-TeXt-theme
 					<hr>
 				</div>
 			{% endfor %}
+			</div>
+		</div>
+		<div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12 col-xs-12 sidebar-container">			
+            {% include short-about.html %}
+			{% include friends.html %}
 		</div>
 	</div>
 </div>

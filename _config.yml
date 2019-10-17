@@ -1,11 +1,12 @@
 # Site settings
-title: ldb Blog
-SEOTitle: 悠悠白云的博客 | ldb Blog
+title: LDB
+SEOTitle: 悠悠白云的博客
 header-img: img/home3.jpg
-email: huxpro@gmail.com
-description: "关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "https://huangxuan.me"              # your host, for absolute URL
+email: ldbdream@qq.com
+#搜索词
+description: "热爱生活，热爱自由，这里是LDB的博客"
+keyword: "白云,悠悠白云,博客, 个人网站, 互联网, Web, java , 程序员,gitgub,架构师"
+url: "https://cloud.youyoubaiyun.top"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -13,11 +14,10 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    lovelife-li
-twitter_username:   huxpro
-#facebook_username:  huxpro
+weibo_username: 
+zhihu_username:     
+github_username: lovelife-li 
+oschina_username: lidb
 #linkedin_username:  firstname-lastname-idxxxx
 
 
@@ -40,7 +40,8 @@ anchorjs: true                          # if you want to customize anchor. check
 # `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
 
-
+# Disqus settings（https://disqus.com/）
+disqus_username: 
 
 # Markdown settings
 # replace redcarpet to kramdown,
@@ -58,8 +59,6 @@ kramdown:
 
 
 
-# Disqus settings
-disqus_username: hux
 
 # Netease settings
 netease_comment: false
@@ -70,16 +69,16 @@ netease_comment: false
 # Baidu Analytics 
 # ba_track_id: [your track id]
 
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+# Google Analytics 网站分析统计
+#ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+#ga_domain: huangxuan.me
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "For the next quantum leap<br>终身学习"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "要 输 就 输 给 追 求，<br>要 嫁 就 嫁 给 幸 福！"
+sidebar-avatar: /img/lf.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -103,34 +102,12 @@ page-mathjax: false
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
-        title: "乱序",
-        href: "http://mida.re/"
+        title: "得到",
+        href: "https://www.igetget.com/",
+        description: "知识就在得到"
     },{
-        title: "Sherry Wu",
-        href: "https://xuechundesign.github.io"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "JiyinYiyong",
-        href: "http://tiye.me/"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
+        title: "极客时间",
+        href: "https://time.geekbang.org",
+        description: "提升技术认知"
     }
 ]
