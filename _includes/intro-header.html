@@ -10,6 +10,7 @@
         background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}');
         background: {{ page.header-bg-css }};
     }
+	
 
     {% if page.header-mask %}
     header.intro-header .header-mask{
@@ -55,6 +56,7 @@
 <style type="text/css">
     header.intro-header{
         height: 500px;
+		background: {{ page.header-bg-css }};
         overflow: hidden;
     }
     header.intro-header .container{
@@ -91,7 +93,18 @@
 {% endif %}
 
 {% if include.type == 'page' %}
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background: {{ page.header-bg-css }};
+    }
+</style>
+{% if page.bgflag %}
+<header class="intro-header">
+{% else %}
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+{% endif %}
+<!--取消style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')"-->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
